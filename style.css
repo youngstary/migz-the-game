@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    /* background: rgb(34, 34, 34) */
+    background-image: url("img/brick.png");
+    background-size: 10%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.root {
+    position: relative;
+    height: 660px;
+    width: 1044px;
+    margin-top: 20vh;
+    border: 10px outset rgb(0, 0, 172);
+    margin-right: 50px;
+}
+
+.scoreDiv {
+    margin-top: 20vh;
+    border: 10px outset rgb(0, 0, 139);
+    background: rgb(0, 0, 173);
+    color: white;
+    width: 512px;
+    height: px;
+    text-align: center;
+}
+
+.myniDiv {
+    position: absolute;
+    width: 256px;
+    height: 128px;
+}
+
+.field {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.grass {
+    background: forestgreen;
+    z-index: -1;
+}
+
+.sky {
+    background: skyblue;
+    z-index: -1;
+}
+
+.cloud {
+    background: snow;
+    z-index: -1;
+}
+
+.sun {
+    background: rgb(255, 241, 52);
+    z-index: -1;
+}
+
+.glandex {
+    background-image: url("img/glandex_sprite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.scoreDiv>* {
+    margin: 50px;
+}
+
+.header {
+    font-size: 56px;
+}
+
+.score,
+.lives {
+    font-size: 56px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.gameHeader {
+    position: fixed;
+    border: 10px outset rgb(0, 0, 139);
+    background: rgb(0, 0, 173);
+    padding: 5px 50px;
+    color: white;
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    background: red;
+    border: 5px outset rgb(139, 0, 0);
+    transition: 0.5s;
+}
+
+.footer:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.letterContainer {
+    width: 50vw;
+    border: 10px outset rgb(0, 0, 139);
+    background: rgb(0, 0, 173);
+    color: white;
+    margin-top: 10vh;
+    padding: 40px;
+    text-align: justify;
+}
+
+.letterContainer>p {
+    font-size: 22px;
+    margin-top: 22px;
+    line-height: 1.5;
+}
+
+.firstPic,
+.lastPic,
+.drawing {
+    display: block;
+    width: 500px;
+    border: 5px outset black;
+}
+
+.drawing {
+    width: 750px;
+    margin: 0 auto;
+}
